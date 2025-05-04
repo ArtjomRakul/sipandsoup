@@ -1,0 +1,12 @@
+function loadPartial(id, url) {
+  fetch(url)
+    .then(response => response.text())
+    .then(html => { document.getElementById(id).innerHTML = html; });
+}
+document.addEventListener("DOMContentLoaded", function() {
+  // Определяем уровень вложенности
+  const isRecipe = window.location.pathname.includes('/recipes/');
+  const partialsPrefix = isRecipe ? '../partials/' : 'partials/';
+  loadPartial("navbar", partialsPrefix + "navbar.html");
+  loadPartial("footer", partialsPrefix + "footer.html");
+});

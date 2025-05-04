@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Shrimp & Corn Chowder</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
@@ -56,7 +56,7 @@
   <div class="container py-4">
     <div class="row align-items-start">
       <div class="col-md-6">
-        <img src="images/KujoJotaro.png" class="img-fluid" alt="Shrimp & Corn Chowder">
+        <img src="../assets/images/KujoJotaro.png" class="img-fluid" alt="Shrimp & Corn Chowder">
       </div>
       <div class="col-md-6">
         <h1>Shrimp & Corn Chowder</h1>
@@ -100,12 +100,18 @@
           <li><strong>Spice it up:</strong> A pinch of cayenne or a dash of hot sauce adds a nice kick.</li>
           <li><strong>Herb notes:</strong> Fresh thyme or chives make a lovely garnish in place of parsley.</li>
         </ul>
-        <a href="home.html" class="btn btn-secondary mt-3">Back to Home</a>
+        <a href="../home.html" class="btn btn-secondary mt-3">Back to Home</a>
       </div>
     </div>
   </div>
   <div id="footer"></div>
-  <script src="partials.js"></script>
+  <script src="../assets/js/partials.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      loadPartial("navbar", "../partials/navbar.html");
+      loadPartial("footer", "../partials/footer.html");
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@ body {
   }
 
   .home-header {
-    background-image: url('images/bghome.png');
+    background-image: url('../images/bghome.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
