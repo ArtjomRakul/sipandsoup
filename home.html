@@ -4,61 +4,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Soup Recipes - Home</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS (keep your existing styles for customization) -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Soup Recipes</h1>
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="classic.html">Classic</a></li>
-        <li><a href="vegetarian.html">Vegetarian</a></li>
-        <li><a href="hearty.html">Hearty</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <!-- Updated nav with Bootstrap classes -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">Soup Recipes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="classic.html">Classic</a></li>
+            <li class="nav-item"><a class="nav-link" href="vegetarian.html">Vegetarian</a></li>
+            <li class="nav-item"><a class="nav-link" href="hearty.html">Hearty</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
-  <div class="container">
-    <div class="grid">
-      <a class="card" href="classic.html">
-        <img src="images/LuffyBorscht.png" alt="Classic Ukrainian Borscht">
-        <div class="card-content">
-          <h2>Classic Ukrainian Borscht</h2>
-          <p>Rich beet soup with beef, served with sour cream.</p>
-        </div>
-      </a>
-      <a class="card" href="vegetarian.html">
-        <img src="images/EdwardSoup.png" alt="Creamy Pea & Mint Soup">
-        <div class="card-content">
-          <h2>Creamy Pea & Mint Soup</h2>
-          <p>Bright and refreshing, perfect for a light lunch.</p>
-        </div>
-      </a>
-      <a class="card" href="hearty.html">
-        <img src="images/madara.png" alt="Hearty Hodgepodge Soup">
-        <div class="card-content">
-          <h2>Hearty Hodgepodge Soup</h2>
-          <p>Vegetable-packed, stick-to-your-ribs comfort food.</p>
-        </div>
-      </a>
-      <a class="card" href="classic.html">
-        <img src="images/KujoJotaro.png" alt="Shrimp & Corn Chowder">
-        <div class="card-content">
-          <h2>Shrimp & Corn Chowder</h2>
-          <p>Creamy, sweet, and savory—all in one bowl.</p>
-        </div>
-      </a>
-      <a class="card" href="vegetarian.html">
-        <img src="images/saske.png" alt="Lentil & Vegetable Soup">
-        <div class="card-content">
-          <h2>Lentil & Vegetable Soup</h2>
-          <p>Wholesome, protein-rich, and totally vegetarian.</p>
-        </div>
-      </a>
+
+  <!-- Wrapped content in Bootstrap container and row -->
+  <div class="container py-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <!-- Updated recipe links with Bootstrap card classes -->
+      <div class="col">
+        <a href="classic.html" class="card h-100 text-decoration-none">
+          <img src="images/LuffyBorscht.png" class="card-img-top" alt="Classic Ukrainian Borscht">
+          <div class="card-body">
+            <h5 class="card-title">Classic Ukrainian Borscht</h5>
+            <p class="card-text">Rich beet soup with beef, served with sour cream.</p>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="vegetarian.html" class="card h-100 text-decoration-none">
+          <img src="images/EdwardSoup.png" class="card-img-top" alt="Creamy Pea & Mint Soup">
+          <div class="card-body">
+            <h5 class="card-title">Creamy Pea & Mint Soup</h5>
+            <p class="card-text">Bright and refreshing, perfect for a light lunch.</p>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="hearty.html" class="card h-100 text-decoration-none">
+          <img src="images/madara.png" class="card-img-top" alt="Hearty Hodgepodge Soup">
+          <div class="card-body">
+            <h5 class="card-title">Hearty Hodgepodge Soup</h5>
+            <p class="card-text">Vegetable-packed, stick-to-your-ribs comfort food.</p>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="classic.html" class="card h-100 text-decoration-none">
+          <img src="images/KujoJotaro.png" class="card-img-top" alt="Shrimp & Corn Chowder">
+          <div class="card-body">
+            <h5 class="card-title">Shrimp & Corn Chowder</h5>
+            <p class="card-text">Creamy, sweet, and savory—all in one bowl.</p>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="vegetarian.html" class="card h-100 text-decoration-none">
+          <img src="images/saske.png" class="card-img-top" alt="Lentil & Vegetable Soup">
+          <div class="card-body">
+            <h5 class="card-title">Lentil & Vegetable Soup</h5>
+            <p class="card-text">Wholesome, protein-rich, and totally vegetarian.</p>
+          </div>
+        </a>
+      </div>
+      <!-- ... potentially more recipe cards ... -->
     </div>
   </div>
-  <footer>© 2025 Soup Recipes. All rights reserved.</footer>
+
+  <!-- Updated footer with Bootstrap classes -->
+  <footer class="bg-light py-3 text-center mt-4">© 2025 Soup Recipes. All rights reserved.</footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
