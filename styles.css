@@ -1,53 +1,55 @@
 body {
     margin: 0;
-    font-family: 'Georgia', serif; /* Keep custom font if desired */
-    /* background: #f2f2f2; */ /* Bootstrap handles background */
-    /* color: #333; */ /* Bootstrap handles base text color */
-    padding-top: 70px; /* Add padding for fixed navbar */
+    font-family: 'Georgia', serif;
+    padding-top: 70px;
   }
 
-  /* Remove header styles - handled by Bootstrap navbar */
-  /* header { ... } */
-  /* header h1 { ... } */
-
-  /* General header styling (if any needed besides navbar) */
-  header {
-    /* Removed background image and padding styles */
-  }
-
-  /* Add header background image specifically for home page */
   .home-header {
     background-image: url('images/bghome.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 15rem 0; /* Keep the padding for the home header */
+    padding: 15rem 0;
   }
-
-  /* Navbar adjustments */
   .navbar {
-    background-color: rgba(248, 249, 250, 0.85) !important; /* Slightly transparent light background */
-    height: 70px; /* Fixed height for navbar */
+    background-color: rgba(248, 249, 250, 0.85) !important;
+    height: 70px;
+  }
+  .card {
+    transition: transform 0.2s cubic-bezier(.4,0,.2,1), box-shadow 0.2s cubic-bezier(.4,0,.2,1);
   }
 
-  /* Remove nav styles - handled by Bootstrap navbar */
-  /* nav ul { ... } */
+  .card:hover, .card:focus-visible {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 1.5px 6px rgba(0,0,0,0.08);
+    z-index: 2;
+  }
 
-  /* Remove container styles - handled by Bootstrap container */
-  /* .container { ... } */
+  .card-body {
+    position: relative;
+  }
 
-  /* Remove grid styles - handled by Bootstrap grid system */
-  /* .grid { ... } */
+  .read-more-btn {
+    display: block;
+    width: max-content;
+    margin: 1rem auto 0 auto;
+    opacity: 0;
+    transform: translateY(10px);
+    background: #fff;
+    color: #007bff;
+    border-radius: 2rem;
+    padding: 0.4rem 1.2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: opacity 0.25s, transform 0.25s;
+    pointer-events: none;
+    border: 1px solid #007bff;
+  }
 
-  /* Remove card styles - handled by Bootstrap cards */
-  /* .card { ... } */
-  /* .card:hover { ... } */
-  /* .card img { ... } */
-  /* .card-content { ... } */
-  /* .card-content h2 { ... } */
-  /* .card-content p { ... } */
-
-  /* Remove footer styles - handled by Bootstrap utilities */
-  /* footer { ... } */
-
-  /* Add any custom overrides or additional styles below */
+  .card:hover .read-more-btn,
+  .card:focus-visible .read-more-btn {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
