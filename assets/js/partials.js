@@ -4,7 +4,6 @@ function loadPartial(id, url) {
     .then(html => { document.getElementById(id).innerHTML = html; });
 }
 document.addEventListener("DOMContentLoaded", function() {
-  // Определяем уровень вложенности
   const isRecipe = window.location.pathname.includes('/recipes/');
   const partialsPrefix = isRecipe ? '../partials/' : 'partials/';
   loadPartial("navbar", partialsPrefix + "navbar.html");
