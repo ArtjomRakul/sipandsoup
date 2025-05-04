@@ -13,7 +13,7 @@
 <body>
   <header>
     <!-- Updated nav with Bootstrap classes -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="home.html">Soup Recipes</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -22,53 +22,52 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" href="classic.html">Classic</a></li>
-            <li class="nav-item"><a class="nav-link" href="vegetarian.html">Vegetarian</a></li>
-            <li class="nav-item"><a class="nav-link" href="hearty.html">Hearty</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <!-- Wrapped content in Bootstrap container and row -->
+  <!-- Updated content structure for single recipe -->
   <div class="container py-4">
-    <h1 class="text-center mb-4">Classic Soups</h1>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-      <!-- Example Card 1: Classic Ukrainian Borscht -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="images/LuffyBorscht.png" class="card-img-top" alt="Classic Ukrainian Borscht">
-          <div class="card-body">
-            <h5 class="card-title">Classic Ukrainian Borscht</h5>
-            <p class="card-text">Rich beet soup with beef, served with sour cream.</p>
-            <!-- Add link to recipe page if available -->
-            <!-- <a href="#" class="btn btn-primary">View Recipe</a> -->
-          </div>
-        </div>
+    <div class="row align-items-start">
+      <div class="col-md-6">
+        <img src="images/LuffyBorscht.png" class="img-fluid" alt="Classic Ukrainian Borscht">
       </div>
-      <!-- Example Card 2: Shrimp & Corn Chowder -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="images/KujoJotaro.png" class="card-img-top" alt="Shrimp & Corn Chowder">
-          <div class="card-body">
-            <h5 class="card-title">Shrimp & Corn Chowder</h5>
-            <p class="card-text">Creamy, sweet, and savory—all in one bowl.</p>
-            <!-- <a href="#" class="btn btn-primary">View Recipe</a> -->
-          </div>
-        </div>
-      </div>
-      <!-- Add more .col divs with .card for other classic recipes -->
-      <!-- Placeholder Card -->
-      <div class="col">
-        <div class="card h-100">
-          <!-- <img src="images/placeholder_classic.jpg" class="card-img-top" alt="Another Classic Soup"> -->
-          <div class="card-body">
-            <h5 class="card-title">Another Classic Soup</h5>
-            <p class="card-text">Description for another classic soup recipe.</p>
-            <!-- <a href="#" class="btn btn-primary">View Recipe</a> -->
-          </div>
-        </div>
+      <div class="col-md-6">
+        <h1>Classic Ukrainian Borscht</h1>
+        <p>Rich beet soup with beef, served with sour cream.</p>
+        <!-- Recipe Details -->
+        <p><strong>Servings:</strong> 6–8<br>
+           <strong>Prep Time:</strong> 20 minutes<br>
+           <strong>Cook Time:</strong> 1 hour 30 minutes</p>
+
+        <h2>Ingredients</h2>
+        <ul>
+          <li>2 tablespoons sunflower oil</li>
+          <li>1 medium onion, chopped</li>
+          <li>2 carrots, grated</li>
+          <li>1 beet, peeled and grated</li>
+          <li>½ small head of green cabbage, shredded</li>
+          <li>2 medium potatoes, peeled and diced</li>
+          <li>2 tablespoons tomato paste</li>
+          <li>6 cups beef broth</li>
+          <li>1 bay leaf</li>
+          <li>200–300g beef (with bone, like short ribs or shank)</li>
+          <li>Salt & pepper, to taste</li>
+          <li>Fresh dill, chopped (for garnish)</li>
+          <li>Sour cream (for serving)</li>
+        </ul>
+        <h2>Instructions</h2>
+        <ol>
+          <li><strong>Cook the beef:</strong> Place beef in a large pot and cover with water. Bring to a boil, skimming off any foam. Reduce heat, cover, and simmer for about 45 minutes to 1 hour until tender. Remove beef, cut into bite-sized pieces, and return to the pot.</li>
+          <li><strong>Sauté the vegetables:</strong> In a separate pan, heat sunflower oil over medium heat. Add onion and carrots; cook until soft, about 5 minutes. Add beets and tomato paste; cook another 5–7 minutes until vibrant and tender.</li>
+          <li><strong>Combine and simmer:</strong> Add sautéed vegetables to the pot with beef broth. Stir in potatoes, cabbage, and bay leaf. Simmer uncovered for 20–25 minutes until vegetables are soft.</li>
+          <li><strong>Season and rest:</strong> Season with salt and pepper to taste. Turn off the heat and let the borscht sit covered for 10–15 minutes to deepen the flavor.</li>
+          <li><strong>Serve warm:</strong> Ladle borscht into bowls. Top with a dollop of sour cream and sprinkle with fresh dill. Serve with rye bread or garlic pampushky if desired.</li>
+        </ol>
+        <a href="home.html" class="btn btn-secondary mt-3">Back to Home</a>
       </div>
     </div>
   </div>

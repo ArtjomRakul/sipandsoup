@@ -3,15 +3,35 @@ body {
     font-family: 'Georgia', serif; /* Keep custom font if desired */
     /* background: #f2f2f2; */ /* Bootstrap handles background */
     /* color: #333; */ /* Bootstrap handles base text color */
+    padding-top: 70px; /* Add padding for fixed navbar */
   }
 
   /* Remove header styles - handled by Bootstrap navbar */
   /* header { ... } */
   /* header h1 { ... } */
 
+  /* General header styling (if any needed besides navbar) */
+  header {
+    /* Removed background image and padding styles */
+  }
+
+  /* Add header background image specifically for home page */
+  .home-header {
+    background-image: url('images/bghome.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15rem 0; /* Keep the padding for the home header */
+  }
+
+  /* Navbar adjustments */
+  .navbar {
+    background-color: rgba(248, 249, 250, 0.85) !important; /* Slightly transparent light background */
+    height: 70px; /* Fixed height for navbar */
+  }
+
   /* Remove nav styles - handled by Bootstrap navbar */
   /* nav ul { ... } */
-  /* nav a { ... } */
 
   /* Remove container styles - handled by Bootstrap container */
   /* .container { ... } */
