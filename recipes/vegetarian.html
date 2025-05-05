@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vegetarian Recipes</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/partials.js"></script>
+</head>
+<body>
+  <header>
+    <div id="navbar"></div>
+  </header>
+  <main>
+    <section>
+      <h2>Recipe 1</h2>
+      <p>Details about Recipe 1.</p>
+    </section>
+    <section>
+      <h2>Recipe 2</h2>
+      <p>Details about Recipe 2.</p>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script src="../assets/js/partials.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      loadPartial("navbar", "../partials/navbar.html");
+      loadPartial("footer", "../partials/footer.html");
+    });
+  </script>
+</body>
+</html>
