@@ -11,10 +11,11 @@ function loadPartial(id, url) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+  const basePath = '/sipandsoup.github.io/';
   const path = window.location.pathname;
-  const partialsPrefix = path.includes('/recipes/') ? '../partials/' :
-                         path.endsWith('/index.html') || path === '/' ? 'partials/' :
-                         './partials/';
+  const partialsPrefix = path.includes('/recipes/') ? basePath + 'partials/' :
+                         path.endsWith('/index.html') || path === '/' ? basePath + 'partials/' :
+                         basePath + 'partials/';
   
   loadPartial("navbar", partialsPrefix + "navbar.html");
   loadPartial("footer", partialsPrefix + "footer.html");
