@@ -11,9 +11,10 @@ function loadPartial(id, url) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  const isRecipe = window.location.pathname.includes('/recipes/');
-  const isRoot = window.location.pathname === '/' || window.location.pathname.endsWith('/index.html');
-  const partialsPrefix = isRecipe ? '../partials/' : isRoot ? 'partials/' : './partials/';
+  const path = window.location.pathname;
+  const partialsPrefix = path.includes('/recipes/') ? '../partials/' :
+                         path.endsWith('/index.html') || path === '/' ? 'partials/' :
+                         './partials/';
   
   loadPartial("navbar", partialsPrefix + "navbar.html");
   loadPartial("footer", partialsPrefix + "footer.html");
