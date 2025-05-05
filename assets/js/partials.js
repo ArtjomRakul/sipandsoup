@@ -11,7 +11,8 @@ function loadPartial(id, url) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  const basePath = '/sipandsoup.github.io/';
+  const isLocal = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost";
+  const basePath = isLocal ? '/' : '/sipandsoup.github.io/';
   const path = window.location.pathname;
   const partialsPrefix = path.includes('/recipes/') ? basePath + 'partials/' :
                          path.endsWith('/index.html') || path === '/' ? basePath + 'partials/' :
