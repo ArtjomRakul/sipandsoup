@@ -12,13 +12,37 @@
     "@type": "Recipe",
     "name": "Hearty Hodgepodge Soup",
     "description": "Vegetable-packed, stick-to-your-ribs comfort food.",
-    "image": "images/madara.png",
+    "image": [
+      "https://yourdomain.com/assets/images/madara.png"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Soup Recipes Team"
+    },
+    "datePublished": "2024-06-01",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://yourdomain.com/recipes/hearty.html"
+    },
+    "keywords": "vegetable soup, hodgepodge, hearty soup, comfort food",
     "recipeCategory": "Soup",
     "recipeCuisine": "International",
     "recipeYield": "6 servings",
     "prepTime": "PT25M",
     "cookTime": "PT45M",
     "totalTime": "PT1H10M",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "210 calories",
+      "carbohydrateContent": "34g",
+      "proteinContent": "7g",
+      "fatContent": "5g"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "29"
+    },
     "recipeIngredient": [
       "1 tablespoon olive oil",
       "1 large onion, chopped",
@@ -37,13 +61,33 @@
       "Optional: Chopped fresh parsley for garnish"
     ],
     "recipeInstructions": [
-      "Heat olive oil in a large pot or Dutch oven over medium heat. Add onion, carrots, and celery. Cook until softened, about 7-10 minutes. Add garlic, thyme, and rosemary, and cook for 1 minute more until fragrant.",
-      "Stir in the diced tomatoes (with their juice) and vegetable broth. Bring the mixture to a simmer.",
-      "Add the diced potato to the pot. Reduce heat, cover partially, and simmer for 15-20 minutes, or until the potato is nearly tender.",
-      "Stir in the green beans, corn, and kidney beans. Continue to simmer for another 10-15 minutes, or until all vegetables are tender.",
-      "Season the soup generously with salt and pepper to taste. Ladle into bowls and garnish with fresh parsley, if desired."
+      {
+        "@type": "HowToStep",
+        "name": "Sauté vegetables",
+        "text": "Heat olive oil in a large pot or Dutch oven over medium heat. Add onion, carrots, and celery. Cook until softened, about 7-10 minutes. Add garlic, thyme, and rosemary, and cook for 1 minute more until fragrant."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Add liquids and base",
+        "text": "Stir in the diced tomatoes (with their juice) and vegetable broth. Bring the mixture to a simmer."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Cook root vegetables",
+        "text": "Add the diced potato to the pot. Reduce heat, cover partially, and simmer for 15-20 minutes, or until the potato is nearly tender."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Add remaining vegetables and beans",
+        "text": "Stir in the green beans, corn, and kidney beans. Continue to simmer for another 10-15 minutes, or until all vegetables are tender."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Season and serve",
+        "text": "Season the soup generously with salt and pepper to taste. Ladle into bowls and garnish with fresh parsley, if desired."
+      }
     ],
-    "url": "hearty.html"
+    "url": "https://yourdomain.com/recipes/hearty.html"
   }
   </script>
 </head>

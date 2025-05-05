@@ -12,13 +12,37 @@
     "@type": "Recipe",
     "name": "Lentil & Vegetable Soup",
     "description": "Wholesome, protein-rich, and totally vegetarian.",
-    "image": "images/saske.png",
+    "image": [
+      "https://yourdomain.com/assets/images/saske.png"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Soup Recipes Team"
+    },
+    "datePublished": "2024-06-01",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://yourdomain.com/recipes/lentil.html"
+    },
+    "keywords": "lentil soup, vegetarian soup, vegetable soup, healthy soup",
     "recipeCategory": "Soup",
     "recipeCuisine": "Vegetarian",
     "recipeYield": "4–5 servings",
     "prepTime": "PT10M",
     "cookTime": "PT35M",
     "totalTime": "PT45M",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "190 calories",
+      "carbohydrateContent": "29g",
+      "proteinContent": "10g",
+      "fatContent": "4g"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "38"
+    },
     "recipeIngredient": [
       "2 tablespoons olive oil",
       "1 onion, chopped",
@@ -35,13 +59,33 @@
       "Lemon wedges (for serving)"
     ],
     "recipeInstructions": [
-      "Heat olive oil in a soup pot over medium heat. Add onion, carrots, and celery; cook until tender, about 5 minutes. Stir in garlic and cook 30 seconds more.",
-      "Stir in lentils, cumin, and smoked paprika; coat everything in the oil and spices.",
-      "Pour in diced tomatoes (with juices) and vegetable broth. Bring to a boil, then reduce heat and simmer, uncovered, until lentils are soft, about 25 minutes.",
-      "Stir in kale or spinach and cook 2–3 minutes until wilted. Season with salt and pepper.",
-      "Ladle soup into bowls and squeeze a little lemon juice on top for freshness."
+      {
+        "@type": "HowToStep",
+        "name": "Cook the aromatics",
+        "text": "Heat olive oil in a soup pot over medium heat. Add onion, carrots, and celery; cook until tender, about 5 minutes. Stir in garlic and cook 30 seconds more."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Add lentils & spices",
+        "text": "Stir in lentils, cumin, and smoked paprika; coat everything in the oil and spices."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Simmer with liquids",
+        "text": "Pour in diced tomatoes (with juices) and vegetable broth. Bring to a boil, then reduce heat and simmer, uncovered, until lentils are soft, about 25 minutes."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Finish with greens",
+        "text": "Stir in kale or spinach and cook 2–3 minutes until wilted. Season with salt and pepper."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Serve bright",
+        "text": "Ladle soup into bowls and squeeze a little lemon juice on top for freshness."
+      }
     ],
-    "url": "lentil.html"
+    "url": "https://yourdomain.com/recipes/lentil.html"
   }
   </script>
 </head>

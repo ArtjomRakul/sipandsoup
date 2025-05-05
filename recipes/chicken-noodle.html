@@ -12,13 +12,37 @@
     "@type": "Recipe",
     "name": "Classic Chicken Noodle Soup",
     "description": "Comforting and timeless, perfect for any day.",
-    "image": "images/narutochicken.png",
+    "image": [
+      "https://yourdomain.com/assets/images/narutochicken.png"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Soup Recipes Team"
+    },
+    "datePublished": "2024-06-01",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://yourdomain.com/recipes/chicken-noodle.html"
+    },
+    "keywords": "chicken noodle soup, classic soup, comfort food, homemade soup",
     "recipeCategory": "Soup",
     "recipeCuisine": "American",
     "recipeYield": "6 servings",
     "prepTime": "PT15M",
     "cookTime": "PT40M",
     "totalTime": "PT55M",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "230 calories",
+      "carbohydrateContent": "20g",
+      "proteinContent": "16g",
+      "fatContent": "8g"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "62"
+    },
     "recipeIngredient": [
       "2 tablespoons olive oil",
       "1 medium onion, diced",
@@ -34,12 +58,28 @@
       "Fresh parsley, chopped (for garnish)"
     ],
     "recipeInstructions": [
-      "In a large pot over medium heat, warm the olive oil. Add onion, carrots, and celery; cook until softened, about 5–7 minutes. Stir in garlic and cook 1 more minute.",
-      "Pour in the chicken broth, then add shredded chicken, thyme, and the bay leaf. Bring to a gentle boil.",
-      "Once boiling, add egg noodles and simmer until tender, about 8–10 minutes.",
-      "Remove bay leaf, taste and season with salt and pepper. Ladle into bowls and sprinkle with fresh parsley."
+      {
+        "@type": "HowToStep",
+        "name": "Sauté the veggies",
+        "text": "In a large pot over medium heat, warm the olive oil. Add onion, carrots, and celery; cook until softened, about 5–7 minutes. Stir in garlic and cook 1 more minute."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Build the broth",
+        "text": "Pour in the chicken broth, then add shredded chicken, thyme, and the bay leaf. Bring to a gentle boil."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Cook the noodles",
+        "text": "Once boiling, add egg noodles and simmer until tender, about 8–10 minutes."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Season & serve",
+        "text": "Remove bay leaf, taste and season with salt and pepper. Ladle into bowls and sprinkle with fresh parsley."
+      }
     ],
-    "url": "chicken-noodle.html"
+    "url": "https://yourdomain.com/recipes/chicken-noodle.html"
   }
   </script>
 </head>

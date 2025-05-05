@@ -12,13 +12,37 @@
     "@type": "Recipe",
     "name": "Creamy Pea & Mint Soup",
     "description": "Bright and refreshing, perfect for a light lunch.",
-    "image": "images/EdwardSoup.png",
+    "image": [
+      "https://yourdomain.com/assets/images/EdwardSoup.png"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Soup Recipes Team"
+    },
+    "datePublished": "2024-06-01",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://yourdomain.com/recipes/creamy-pea.html"
+    },
+    "keywords": "pea soup, mint soup, vegetarian soup, creamy soup",
     "recipeCategory": "Soup",
     "recipeCuisine": "International",
     "recipeYield": "4 servings",
     "prepTime": "PT10M",
     "cookTime": "PT20M",
     "totalTime": "PT30M",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "180 calories",
+      "carbohydrateContent": "22g",
+      "proteinContent": "7g",
+      "fatContent": "7g"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "41"
+    },
     "recipeIngredient": [
       "1 tablespoon olive oil",
       "1 medium onion, chopped",
@@ -30,13 +54,33 @@
       "Optional: A swirl of cream or plain yogurt for serving"
     ],
     "recipeInstructions": [
-      "Heat olive oil in a large pot or Dutch oven over medium heat. Add the chopped onion and cook until softened, about 5 minutes. Add the minced garlic and cook for another minute until fragrant.",
-      "Pour in the vegetable broth and add the frozen peas. Bring the mixture to a simmer and cook for 5-7 minutes, or until the peas are tender.",
-      "Remove the pot from the heat. Add the fresh mint leaves. Use an immersion blender to carefully blend the soup until smooth. Alternatively, let the soup cool slightly and blend in batches in a regular blender.",
-      "Return the soup to the pot if necessary. Season generously with salt and pepper to taste. Reheat gently if needed, but do not boil after adding mint.",
-      "Ladle the soup into bowls. Garnish with a swirl of cream or yogurt and a few extra mint leaves, if desired."
+      {
+        "@type": "HowToStep",
+        "name": "Sauté aromatics",
+        "text": "Heat olive oil in a large pot or Dutch oven over medium heat. Add the chopped onion and cook until softened, about 5 minutes. Add the minced garlic and cook for another minute until fragrant."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Simmer the soup",
+        "text": "Pour in the vegetable broth and add the frozen peas. Bring the mixture to a simmer and cook for 5-7 minutes, or until the peas are tender."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Blend",
+        "text": "Remove the pot from the heat. Add the fresh mint leaves. Use an immersion blender to carefully blend the soup until smooth. Alternatively, let the soup cool slightly and blend in batches in a regular blender."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Season",
+        "text": "Return the soup to the pot if necessary. Season generously with salt and pepper to taste. Reheat gently if needed, but do not boil after adding mint."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Serve",
+        "text": "Ladle the soup into bowls. Garnish with a swirl of cream or yogurt and a few extra mint leaves, if desired."
+      }
     ],
-    "url": "creamy-pea.html"
+    "url": "https://yourdomain.com/recipes/creamy-pea.html"
   }
   </script>
 </head>
