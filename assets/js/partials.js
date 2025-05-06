@@ -1,5 +1,6 @@
 function loadPartial(id, url) {
-  fetch(url + '.html')
+  const adjustedUrl = (isLocalhost() && url === '/') ? '/index.html' : url + '.html';
+  fetch(adjustedUrl)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Failed to load ${url}: ${response.statusText}`);
@@ -22,7 +23,13 @@ function isLocalhost() {
 function appendHtmlToLinks() {
   document.querySelectorAll('a[href]').forEach(link => {
     const href = link.getAttribute('href');
-    if (href && !href.includes('.') && !href.startsWith('#') && !href.startsWith('http')) {
+    if (
+      href &&
+      href !== '/' && // Exclude the root path
+      !href.includes('.') &&
+      !href.startsWith('#') &&
+      !href.startsWith('http')
+    ) {
       link.setAttribute('href', `${href}.html`);
     }
   });
