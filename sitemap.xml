@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sipandsoup.dedyn.io/index.html</loc>
+    <loc>https://sipandsoup.dedyn.io/index</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sipandsoup.dedyn.io/about.html</loc>
+    <loc>https://sipandsoup.dedyn.io/about</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sipandsoup.dedyn.io/contact.html</loc>
+    <loc>https://sipandsoup.dedyn.io/contact</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sipandsoup.dedyn.io/tutorials.html</loc>
+    <loc>https://sipandsoup.dedyn.io/tutorials</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sipandsoup.dedyn.io/faq.html</loc>
+    <loc>https://sipandsoup.dedyn.io/faq</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sipandsoup.dedyn.io/recipes/borscht.html</loc>
+    <loc>https://sipandsoup.dedyn.io/recipes/borscht</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sipandsoup.dedyn.io/recipes/creamy-pea.html</loc>
+    <loc>https://sipandsoup.dedyn.io/recipes/creamy-pea</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sipandsoup.dedyn.io/recipes/hearty.html</loc>
+    <loc>https://sipandsoup.dedyn.io/recipes/hearty</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sipandsoup.dedyn.io/recipes/shrimp.html</loc>
+    <loc>https://sipandsoup.dedyn.io/recipes/shrimp</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sipandsoup.dedyn.io/recipes/lentil.html</loc>
+    <loc>https://sipandsoup.dedyn.io/recipes/lentil</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sipandsoup.dedyn.io/recipes/chicken-noodle.html</loc>
+    <loc>https://sipandsoup.dedyn.io/recipes/chicken-noodle</loc>
     <priority>0.6</priority>
   </url>
 </urlset>
