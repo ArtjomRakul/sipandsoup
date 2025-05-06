@@ -6,7 +6,18 @@ function loadPartial(id, url) {
       }
       return response.text();
     })
-    .then(html => { document.getElementById(id).innerHTML = html; })
+    .then(html => {
+      document.getElementById(id).innerHTML = html;
+
+      const isLocal = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost";
+      const basePath = isLocal ? '/' : '/sipandsoup.github.io/';
+      document.querySelectorAll(`#${id} a`).forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && !href.startsWith('http') && !href.startsWith('#')) {
+          link.setAttribute('href', basePath + href.replace(/^\.\//, ''));
+        }
+      });
+    })
     .catch(error => console.error(error));
 }
 
