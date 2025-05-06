@@ -23,13 +23,7 @@ function isLocalhost() {
 function appendHtmlToLinks() {
   document.querySelectorAll('a[href]').forEach(link => {
     const href = link.getAttribute('href');
-    if (
-      href &&
-      href !== '/' && // Exclude the root path
-      !href.includes('.') &&
-      !href.startsWith('#') &&
-      !href.startsWith('http')
-    ) {
+    if (href & href !== '/' && !href.includes('.') && !href.startsWith('#') && !href.startsWith('http')) {
       link.setAttribute('href', `${href}.html`);
     }
   });
