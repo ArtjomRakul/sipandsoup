@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sipandsoup.dedyn.io/sitemap.xml
