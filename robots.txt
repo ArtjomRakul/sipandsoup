@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /partials/
 Sitemap: https://sipandsoup.dedyn.io/sitemap.xml
